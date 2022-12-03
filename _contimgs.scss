@@ -1,0 +1,11 @@
+.contimgs{
+    margin-top: 10px;
+    align-self: flex-end;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and(min-width:950px) {
+        width: 50%;
+    }
+}

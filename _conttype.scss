@@ -1,0 +1,27 @@
+.conttype{
+    background-color: #fff;
+    color: #888;
+    margin: auto;
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 20px ;
+    &__span{
+        padding: 8px;
+    }
+    &__icon{
+        padding: 2px 6px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #000;
+        cursor: pointer;
+        border:2px solid #888;
+    }
+    @media screen and(min-width:950px) {
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

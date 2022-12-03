@@ -1,0 +1,98 @@
+ @import 'mobilsection';
+ @import 'contsection';
+ @import 'contimgs';
+ @import 'conttalk';
+ @import 'conttype';
+ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', 'Open Sans', 'Arial', sans-serif;
+    font-size: 10px;
+}
+
+ body{
+    height: 130vh;
+    transition: all 4s ease;
+    background:radial-gradient(circle, #212529, #4E1DB7);
+    .sun, .moon{
+        display: none;
+    }
+    .light{
+        padding:1px 2px;
+        box-shadow: 0 0 1px .4px #000;
+        border-radius: 20px;
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 7%;
+        transform: scale(3);
+        cursor: pointer;
+        @media screen and(min-width:950px) {
+            padding:1px 2px;
+            box-shadow: 0 0 1px .4px #999;
+            border-radius: 20px;
+            display: block;
+            position: absolute;
+            right: 5%;
+            top: 7%;
+            transform: scale(4);
+            cursor: pointer;
+        }
+    }
+    .moon{
+        padding:1px 4px ;
+    }
+    .cont_purple_mobil{
+         position:absolute;
+         background:linear-gradient(to bottom, #6E10E4, #9b31be, #4E1DB7 ) ;
+         width:185px;
+         height:400px;
+         z-index: -1;
+         top: 0;
+         border-radius: 0 0 100px 100px;
+         @media screen and(min-width:950px) {
+            width:305px;
+            height:450px;
+            border-radius: 0 0 150px 150px;
+            
+         }
+        }
+    .titlebottom{
+        position: absolute;
+        bottom: -40vh;
+        left: 20%;
+        font-size: 3rem;
+        -webkit-text-stroke:1px #000;
+        color: #000;
+        @media screen and(min-width:950px) {
+            position: absolute;
+            top: 45%;
+            left: 55%;
+            font-size: 3rem;
+            -webkit-text-stroke:1px #fff;
+            color: #a64ce6;
+        }
+    }
+    .describtion-side{
+        display: none;
+    }
+    .black{
+        color: #000;
+    }
+    @media screen and(min-width:950px){
+        .describtion-side{
+            display: block;
+            position: absolute;
+            top: 55%;
+            left: 55%;
+            font-size: 20px;
+            width: 380px;
+            color: #fff;
+        }
+        .black{
+            color: #000;
+        }
+    }
+ }

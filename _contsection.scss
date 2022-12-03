@@ -1,0 +1,36 @@
+.cont{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 10px  2px;
+    border-radius: 0 0 20px 20px;
+    &__message{
+        background-color: #d9d9d9;
+        text-align: left;
+        width: 150px;
+        padding: 5px;
+        // box-sizing: content-box;
+        border-radius: 10px 15px 20px 0 ;
+        &:nth-child(2), &:nth-child(3){
+            margin-top: 5px;
+        }
+    }
+    &__right{
+        background-color: #fff;
+        text-align: left;
+        width: 160px;
+        align-self: end;
+        padding: 11px;
+        margin-top:5px;
+        // box-sizing: content-box;
+        border-radius:15px 10px 0 20px;
+    }
+    &__long{
+        margin-top:5px;
+        width: 85%;
+        @media screen and(min-width:950px) {
+            width: 60%;
+        }
+    }
+}

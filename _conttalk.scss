@@ -1,0 +1,27 @@
+.conttalk{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+    background:linear-gradient(to right, #FB5CFE ,#E548FF,  #C93AE0);
+    border-radius: 18px 20px 20px 5px;
+    margin-top: 5px;
+    color: #fff;
+    &__contcirle{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-evenly;
+        .circle{
+            border: 1px solid #fff;
+            padding: 8px 8px;
+            border-radius: 50%;
+        }
+    }
+    .price{
+        font-size: 1.2rem;
+        -webkit-text-stroke: .6px #fff;
+        letter-spacing:1px;
+    }
+}

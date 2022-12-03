@@ -1,0 +1,66 @@
+.mobil{
+    background-color: #fff;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 20px ;
+    width: 200px;
+    padding: 10px;
+    box-shadow:  0 0 20px 1px #000;
+    transition: all 2s ease-in-out;
+    &__cont__header{
+        background:linear-gradient(to right, #CC00FF, #C904FA, #882BFF);
+        border-radius: 20px 20px 0  0;
+        &__phone{
+            display: flex;
+            position: relative;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 15px 10px 10px 10px;
+            &__icon{
+                padding:2px 4px;
+                cursor: pointer;
+                &:hover{
+                    padding:2px 4px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 1px 1px  #000;
+                }
+            }
+            &__blank{
+                position: absolute;
+                background-color: #fff;
+                width: 120px;
+                height: 12px;   
+                left: 30%;
+                top: 0;
+                right: auto;
+                border-radius:0 0 10px 10px;
+            }
+            .face{
+                width: 25px;
+                height: 30px;
+            }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            .name{
+                color: #fff;
+                font-size: 1.4rem;
+            }
+            .s_desc{
+                color: #fff;
+            }
+            
+        }
+    }
+    @media screen and(min-width:950px) {
+        background-color: #fff;
+        margin-left: 170px;
+        margin-top: 100px;
+        border-radius: 20px ;
+        width: 280px;
+        padding: 10px;
+        box-shadow:  0 0 20px 1px #000;       
+    }
+    
+}
